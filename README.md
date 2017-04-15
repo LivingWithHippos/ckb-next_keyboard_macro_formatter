@@ -9,7 +9,7 @@ Create a text file with your favourite editor and start writing "macro: " (witho
 You can now start to write your macro. Every command need to be separated with a space
 * Single letters or symbols: write them once 
 * Keys that need to be kept pressed: type them starting with a plus when you want to start pressing (+lctrl for the left control key) and release them when you need to with a minus (-lctrl). 
-Save your file.
+See the table below for some useful keys names. Remember to save your file. 
 
 ### 2. Run the script
 Open your terminal in the script folder and run `bash macro_script.sh ./path_to_your_macro` 
