@@ -28,6 +28,8 @@ Right Alt | ralt
 Shift | lshift and rshift
 Escape | esc
 Space Bar | space
+Tab | tab
+Caps lock | caps
 
 ## Examples
 
