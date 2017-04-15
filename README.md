@@ -42,6 +42,6 @@ macro: +lctrl c -lctrl
 # Paste
 macro: +lctrl v -lctrl
 # Some words
-macro: H e l l o , space +lshift W o r l d -lshift
+macro: H e l l o , space +lshift w o r l d -lshift
 ```
 Save it and open the terminal in this same folder, run `bash macro_script.sh my_macro.txt` and you should obtain an output.txt file. Follow the instructions of Step 3 to import it into ckb-next.
