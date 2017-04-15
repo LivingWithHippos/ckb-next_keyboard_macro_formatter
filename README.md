@@ -30,6 +30,7 @@ Escape | esc
 Space Bar | space
 Tab | tab
 Caps lock | caps
+f1,f2...|f1,f2...
 
 ## Examples
 
