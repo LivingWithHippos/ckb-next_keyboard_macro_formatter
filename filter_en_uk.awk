@@ -5,7 +5,7 @@ BEGIN {}
     for(x=2;x<=NF;x++){
         do{ 
             # I found a keys being kept pressed or just released, I print it as it is
-            # This works because (probably) I don't want to keep pressed keys that need to be translated (symbols)
+            # This works because (probably) I don't want to keep pressed keys that need to be translated such as symbols
             if(length($x)>1&&(substr($x,1,1)=="+"||substr($x,1,1)=="-")){macroLine=macroLine $x; break;}
             # An upper-case key, I need to press shift to do it. Using the !=toupper I avoid triggering things like ","==tolower(",") and ","==toupper(",") 
             if($x!=tolower($x)){macroLine=macroLine "+lshift," "+" tolower($x) ",-" tolower($x) ",-lshift"; break;}
@@ -28,7 +28,7 @@ BEGIN {}
             if($x=="("){ macroLine=macroLine "+lctrl,+lshift,+u,+0,-0,+0,-0,+2,-2,+8,-8,-u,-lshift,-lctrl"; break;}
             if($x==")"){ macroLine=macroLine "+lctrl,+lshift,+u,+0,-0,+0,-0,+2,-2,+9,-9,-u,-lshift,-lctrl"; break;}
             if($x=="\""){ macroLine=macroLine "+lctrl,+lshift,+u,+2,-2,+0,-0,+1,-1,+c,-c,-u,-lshift,-lctrl"; break;}
-            # !"!""£$
+
             # A normal key, press and release it, catches all the remaining cases
             macroLine=macroLine "+" $x ",-" $x
         }
