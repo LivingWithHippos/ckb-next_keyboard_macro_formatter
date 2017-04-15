@@ -1,0 +1,9 @@
+macro: T e s t i n g space +lshift  t h i s  -lshift
+macro: W o r k i n g ? space Y e s , space y a y !
+macro: +lctrl z -lctrl ( space u n d o n e space )
+macro : wrong test
+test: wrong again
+macro:wrong a b
+also a test:Testing
+another wrong macro:test
+this macro is wrong
