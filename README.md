@@ -1,7 +1,7 @@
 # ckb-next_keyboard_macro_formatter
 A script to translate text into a macro compatible with [ckb-next.](https://github.com/mattanger/ckb-next)
-This is helpful for those without a Corsair keyboard that want to use macro with their mouse since currently macro recording for mices like the Scimitair does not work. 
-Please note this is a work in progress and has many bugs probably. Symbols are compatible with the en_uk layout only for now, alphanumerics (a-zA-Z0-9) and modifiers (ctrl,alt) should work anyway.
+This is helpful for those without a Corsair keyboard that want to use macro with their mouse since currently macro recording for Corsair's mices ([supported mice list here](https://github.com/mattanger/ckb-next#device-support)) does not work. 
+Please note this is a work in progress and has many bugs probably. Symbols are compatible with the English (en_uk), Italian (it), and German (de) layouts only for now, alphanumerics (a-zA-Z0-9) and modifiers (ctrl,alt) should work anyway (except for the French numbers).
 
 ## How to use
 
