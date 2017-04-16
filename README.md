@@ -2,11 +2,12 @@
 A script to translate text into a macro compatible with [ckb-next.](https://github.com/mattanger/ckb-next)
 This is helpful for those without a Corsair keyboard that want to use macro with their mouse since currently macro recording for mices like the Scimitair does not work. 
 Please note this is a work in progress and has many bugs probably. Symbols are compatible with the en_uk layout only for now, alphanumerics (a-zA-Z0-9) and modifiers (ctrl,alt) should work anyway.
+
 ## How to use
 
 ### 1. Prepare your macro
 Create a text file with your favourite editor and start writing "macro: " (without quotes) this need to be written on every row you want to be processed as macro. The space after the ":" is also needed.
-You can now start to write your macro. Every command need to be separated with a space
+You can now start to write your macro. **Every command need to be separated with a space**
 * Single letters or symbols: write them once 
 * Keys that need to be kept pressed: type them starting with a plus when you want to start pressing (+lctrl for the left control key) and release them when you need to with a minus (-lctrl). 
 See the table below for some useful keys names. Remember to save your file. 
@@ -30,7 +31,12 @@ Escape | esc
 Space Bar | space
 Tab | tab
 Caps lock | caps
-f1,f2...|f1,f2...
+f1,f2... | f1,f2...
+Enter | enter
+Backspace | bspace
+Volume Up | volup
+Volume Down | voldn
+Mute | mute
 
 ## Examples
 
@@ -42,8 +48,8 @@ macro: +lctrl x -lctrl
 macro: +lctrl c -lctrl
 # Paste
 macro: +lctrl v -lctrl
-# Some words
-macro: H e l l o , space +lshift w o r l d -lshift
+# Hello, WORLD!
+macro: H e l l o , space +lshift w o r l d -lshift !
 ```             
 
 Save it and open the terminal in this same folder, run `bash macro_script.sh my_macro.txt` and you should obtain an output.txt file. Follow the instructions of Step 3 to import it into ckb-next.
