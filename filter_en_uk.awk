@@ -75,6 +75,10 @@ BEGIN {}
                 macroLine = macroLine "+equal,-equal";
                 break;
             }
+            if ($x == "+") {
+                macroLine = macroLine "+lshift,+equal,-equal,-lshift";
+                break;
+            }
             if ($x == "[") {
                 macroLine = macroLine "+lbrace,-lbrace";
                 break;
