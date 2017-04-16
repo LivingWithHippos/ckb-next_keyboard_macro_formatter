@@ -62,33 +62,85 @@ BEGIN {}
             if ($x == "/") {
                 macroLine = macroLine "+slash,-slash";
                 break;
-            }#
-            if ($x == "/") {
-                macroLine = macroLine "+numslash,-numslash";
-                break;
-            }#
-            if ($x == "!") {
-                macroLine = macroLine "+exclam,-exclam";
+            }
+            if ($x == "¬") {
+                macroLine = macroLine "+lshift,+grave,-grave,-lshift";
                 break;
             }
             if ($x == "!") {
-                macroLine = macroLine "+lctrl,+lshift,+u,+0,-0,+0,-0,+2,-2,+1,-1,-u,-lshift,-lctrl";
-                break;
-            }
-            if ($x == "?") {
-                macroLine = macroLine "+lctrl,+lshift,+u,+0,-0,+0,-0,+3,-3,+f,-f,-u,-lshift,-lctrl";
-                break;
-            }
-            if ($x == "(") {
-                macroLine = macroLine "+lctrl,+lshift,+u,+0,-0,+0,-0,+2,-2,+8,-8,-u,-lshift,-lctrl";
-                break;
-            }
-            if ($x == ")") {
-                macroLine = macroLine "+lctrl,+lshift,+u,+0,-0,+0,-0,+2,-2,+9,-9,-u,-lshift,-lctrl";
+                macroLine = macroLine "+lshift,+1,-1,-lshift";
                 break;
             }
             if ($x == "\"") {
-                macroLine = macroLine "+lctrl,+lshift,+u,+2,-2,+0,-0,+1,-1,+c,-c,-u,-lshift,-lctrl";
+                macroLine = macroLine "+lshift,+2,-2,-lshift";
+                break;
+            }
+            if ($x == "£") {
+                macroLine = macroLine "+lshift,+3,-3,-lshift";
+                break;
+            }
+            if ($x == "$") {
+                macroLine = macroLine "+lshift,+4,-4,-lshift";
+                break;
+            }
+            if ($x == "%") {
+                macroLine = macroLine "+lshift,+5,-5,-lshift";
+                break;
+            }
+            if ($x == "^") {
+                macroLine = macroLine "+lshift,+6,-6,-lshift";
+                break;
+            }
+            if ($x == "&") {
+                macroLine = macroLine "+lshift,+7,-7,-lshift";
+                break;
+            }
+            if ($x == "*") {
+                macroLine = macroLine "+lshift,+8,-8,-lshift";
+                break;
+            }
+            if ($x == "(") {
+                macroLine = macroLine "+lshift,+9,-9,-lshift";
+                break;
+            }
+            if ($x == ")") {
+                macroLine = macroLine "+lshift,+0,-0,-lshift";
+                break;
+            }
+            if ($x == "_") {
+                macroLine = macroLine "+lshift,+minus,-minus,-lshift";
+                break;
+            }
+            if ($x == "<") {
+                macroLine = macroLine "+lshift,+comma,-comma,-lshift";
+                break;
+            }
+            if ($x == ">") {
+                macroLine = macroLine "+lshift,+dot,-dot,-lshift";
+                break;
+            }
+            if ($x == "?") {
+                macroLine = macroLine "+lshift,+slash,-slash,-lshift";
+                break;
+            }
+            if ($x == ":") {
+                macroLine = macroLine "+lshift,+colon,-colon,-lshift";
+                break;
+            }
+            if ($x == "@") {
+                macroLine = macroLine "+lshift,+quote,-quote,-lshift";
+                break;
+            }
+            if ($x == "~") {
+                macroLine = macroLine "+lshift,+hash,-hash,-lshift";
+                break;
+            }
+            if ($x == "{") {
+                macroLine = macroLine "+lshift,+lbrace,-lbrace,-lshift";
+                break;
+            }
+            if ($x == "}") {
+                macroLine = macroLine "+lshift,+rbrace,-rbrace,-lshift";
                 break;
             }
 
@@ -96,7 +148,7 @@ BEGIN {}
             macroLine = macroLine "+" $x ",-" $x
         }
         while (0)
-        # 0 means it runs only once instead of endlessly looping in case oferrors
+        # 0 means it runs only once instead of endlessly looping in case of errors
         
         # I add a comma between this key and the next unless I 'm at the last one
         if (x < NF)
