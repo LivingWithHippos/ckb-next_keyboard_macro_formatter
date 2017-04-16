@@ -44,5 +44,16 @@ macro: +lctrl c -lctrl
 macro: +lctrl v -lctrl
 # Some words
 macro: H e l l o , space +lshift w o r l d -lshift
-```
+```             
+
 Save it and open the terminal in this same folder, run `bash macro_script.sh my_macro.txt` and you should obtain an output.txt file. Follow the instructions of Step 3 to import it into ckb-next.
+
+### Advanced Example
+
+You can insert every UNICODE symbol using the key combination
+`+lctrl +lshift +u UNICODE_CODE -u -lshift -lctrl`
+For example © has 00A9 as code so the correct sequence is 
+`+lctrl +lshift +u 0 0 a 9 -u -lshift -lctrl`
+letters must be written in lower case because you are already pressing shift. You can see a list of codes on [this Wikipedia article.](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+This is not working 100%, I think It would be solved using some delay between presses.
+ 
