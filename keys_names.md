@@ -1,4 +1,4 @@
-List of key names used for macro creation. 
+List of key names used for macro creation. Use this for non writeable characters only (such as ctrl and alt) as things like / and - and ! will be translated by the script 
 
 Keys Original Names | Keys Macro Names
 --|--
