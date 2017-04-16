@@ -99,14 +99,6 @@ BEGIN {}
                 macroLine = macroLine "+lshift,+rbrace,-rbrace,-lshift";
                 break;
             }
-            if ($x == "#") {
-                macroLine = macroLine "+hash,-hash";
-                break;
-            }
-            if ($x == "~") {
-                macroLine = macroLine "+lshift,+hash,-hash,-lshift";
-                break;
-            }
             if ($x == ";") {
                 macroLine = macroLine "+colon,-colon";
                 break;
@@ -123,8 +115,12 @@ BEGIN {}
                 macroLine = macroLine "+lshift,+quote,-quote,-lshift";
                 break;
             }
-            if ($x == ",") {
-                macroLine = macroLine "+comma,-comma";
+            if ($x == "#") {
+                macroLine = macroLine "+hash,-hash";
+                break;
+            }
+            if ($x == "~") {
+                macroLine = macroLine "+lshift,+hash,-hash,-lshift";
                 break;
             }
             if ($x == "\\") {
@@ -133,6 +129,10 @@ BEGIN {}
             }
             if ($x == "|") {
                 macroLine = macroLine "+lshift,+bslash_iso,-bslash_iso,-lshift";
+                break;
+            }
+            if ($x == ",") {
+                macroLine = macroLine "+comma,-comma";
                 break;
             }
             if ($x == "<") {
