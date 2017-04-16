@@ -19,50 +19,6 @@ BEGIN {}
                 macroLine = macroLine "+grave,-grave";
                 break;
             }
-            if ($x == "-") {
-                macroLine = macroLine "+minus,-minus";
-                break;
-            }
-            if ($x == "[") {
-                macroLine = macroLine "+lbrace,-lbrace";
-                break;
-            }
-            if ($x == "]") {
-                macroLine = macroLine "+rbrace,-rbrace";
-                break;
-            }
-            if ($x == ";") {
-                macroLine = macroLine "+colon,-colon";
-                break;
-            }
-            if ($x == "'") {
-                macroLine = macroLine "+quote,-quote";
-                break;
-            }
-            if ($x == "\\") {
-                macroLine = macroLine "+bslash_iso,-bslash_iso";
-                break;
-            }
-            if ($x == ",") {
-                macroLine = macroLine "+comma,-comma";
-                break;
-            }
-            if ($x == ".") {
-                macroLine = macroLine "+dot,-dot";
-                break;
-            }
-            if ($x == "#") {
-                macroLine = macroLine "+hash,-hash";
-                break;
-            }
-            if ($x == "=") {
-                macroLine = macroLine "+equal,-equal";
-                break;
-            }
-            if ($x == "/") {
-                macroLine = macroLine "+slash,-slash";
-                break;
-            }
             if ($x == "¬") {
                 macroLine = macroLine "+lshift,+grave,-grave,-lshift";
                 break;
@@ -107,40 +63,88 @@ BEGIN {}
                 macroLine = macroLine "+lshift,+0,-0,-lshift";
                 break;
             }
+            if ($x == "-") {
+                macroLine = macroLine "+minus,-minus";
+                break;
+            }
             if ($x == "_") {
                 macroLine = macroLine "+lshift,+minus,-minus,-lshift";
                 break;
             }
-            if ($x == "<") {
-                macroLine = macroLine "+lshift,+comma,-comma,-lshift";
+            if ($x == "=") {
+                macroLine = macroLine "+equal,-equal";
                 break;
             }
-            if ($x == ">") {
-                macroLine = macroLine "+lshift,+dot,-dot,-lshift";
-                break;
-            }
-            if ($x == "?") {
-                macroLine = macroLine "+lshift,+slash,-slash,-lshift";
-                break;
-            }
-            if ($x == ":") {
-                macroLine = macroLine "+lshift,+colon,-colon,-lshift";
-                break;
-            }
-            if ($x == "@") {
-                macroLine = macroLine "+lshift,+quote,-quote,-lshift";
-                break;
-            }
-            if ($x == "~") {
-                macroLine = macroLine "+lshift,+hash,-hash,-lshift";
+            if ($x == "[") {
+                macroLine = macroLine "+lbrace,-lbrace";
                 break;
             }
             if ($x == "{") {
                 macroLine = macroLine "+lshift,+lbrace,-lbrace,-lshift";
                 break;
             }
+            if ($x == "]") {
+                macroLine = macroLine "+rbrace,-rbrace";
+                break;
+            }
             if ($x == "}") {
                 macroLine = macroLine "+lshift,+rbrace,-rbrace,-lshift";
+                break;
+            }
+            if ($x == "#") {
+                macroLine = macroLine "+hash,-hash";
+                break;
+            }
+            if ($x == "~") {
+                macroLine = macroLine "+lshift,+hash,-hash,-lshift";
+                break;
+            }
+            if ($x == ";") {
+                macroLine = macroLine "+colon,-colon";
+                break;
+            }
+            if ($x == ":") {
+                macroLine = macroLine "+lshift,+colon,-colon,-lshift";
+                break;
+            }
+            if ($x == "'") {
+                macroLine = macroLine "+quote,-quote";
+                break;
+            }
+            if ($x == "@") {
+                macroLine = macroLine "+lshift,+quote,-quote,-lshift";
+                break;
+            }
+            if ($x == ",") {
+                macroLine = macroLine "+comma,-comma";
+                break;
+            }
+            if ($x == "\\") {
+                macroLine = macroLine "+bslash_iso,-bslash_iso";
+                break;
+            }
+            if ($x == "|") {
+                macroLine = macroLine "+lshift,+bslash_iso,-bslash_iso,-lshift";
+                break;
+            }
+            if ($x == "<") {
+                macroLine = macroLine "+lshift,+comma,-comma,-lshift";
+                break;
+            }
+            if ($x == ".") {
+                macroLine = macroLine "+dot,-dot";
+                break;
+            }
+            if ($x == ">") {
+                macroLine = macroLine "+lshift,+dot,-dot,-lshift";
+                break;
+            }
+            if ($x == "/") {
+                macroLine = macroLine "+slash,-slash";
+                break;
+            }
+            if ($x == "?") {
+                macroLine = macroLine "+lshift,+slash,-slash,-lshift";
                 break;
             }
 
