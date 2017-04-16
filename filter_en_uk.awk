@@ -39,6 +39,10 @@ BEGIN {}
                 macroLine = macroLine "+lshift,+4,-4,-lshift";
                 break;
             }
+            if ($x == "€") {
+                macroLine = macroLine "+ralt,+4,-4,-ralt";
+                break;
+            }
             if ($x == "%") {
                 macroLine = macroLine "+lshift,+5,-5,-lshift";
                 break;
