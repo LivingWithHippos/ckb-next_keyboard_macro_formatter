@@ -2,7 +2,18 @@
 A script to translate text into a macro compatible with [ckb-next.](https://github.com/mattanger/ckb-next)
 This is helpful for those without a Corsair keyboard that want to use macro with their mouse since currently macro recording for Corsair's mices ([supported mice list here](https://github.com/mattanger/ckb-next#device-support)) does not work. 
 Please note this is a work in progress and has many bugs probably. Symbols are compatible with the English (en_uk), Italian (it), and German (de) layouts only for now, alphanumerics (a-zA-Z0-9) and modifiers (ctrl,alt) should work anyway (except for the French numbers).
-
+ 
+ - [ckb-next_keyboard_macro_formatter](#ckb-next_keyboard_macro_formatter)
+	- [How to use](#how-to-use)
+		- [1. Prepare your macro](#)
+		- [2. Run the script](#)
+		- [3. Import it into ckb-next](#)
+	- [Some useful keys' names](#some-useful-keys-names)
+	- [Examples](#examples)
+		- [Advanced Example](#advanced-example)
+	- [Using other layouts](#using-other-layouts)
+		- [Creating your own language script](#creating-your-own-language-script)
+ 
 ## How to use
 
 ### 1. Prepare your macro
@@ -64,7 +75,7 @@ This is not working 100%, I think It would be solved using some delay between pr
 ## Using other layouts
 You can switch between languages for this script by opening [the macro main script](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/macro_script.sh) an modifying the line `AWK=./filter_en_uk.awk` to your needs.
 
-## Creating you own language script
+### Creating your own language script
 You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/automated_layout_filter_creator.sh) to create your own script. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout: 
 1. A first row with a symbol key under esc on the left of "1", ten numbers and 2 other symbols keys
 2. A row below it starting with TAB, with two symbols keys on the left of ENTER
