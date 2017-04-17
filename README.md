@@ -61,3 +61,14 @@ For example © has 00A9 as code so the correct sequence is
 letters must be written in lower case because you are already pressing shift. You can see a list of codes on [this Wikipedia article.](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
 This is not working 100%, I think It would be solved using some delay between presses.
  
+## Using other layouts
+You can switch between languages for this script by opening [the macro main script](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/macro_script.sh) an modifying the line `AWK=./filter_en_uk.awk` to your needs.
+
+## Creating you own language script
+You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/automated_layout_filter_creator.sh) to create your own script. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout: 
+1. A first row with a symbol key under esc on the left of "1", ten numbers and 2 other symbols keys
+2. A row below it starting with TAB, with two symbols keys on the left of ENTER
+3. A row below it starting with CAPS LOCK, with three symbols keys on the left of Enter
+4. Another row below it starting with LEFT SHIFT with a symbol key on its right and three symbols keys on the left of RIGHT SHIFT
+
+This describes a lot of keyboard but more customization is coming. Run this script, give a name (like your language) as first input and then you'll be asked to press all these symbols keys, from the top left to the bottom right, pressing them first normally and then with the SHIFT key (numbers key need to be pressed only with SHIFT). If your keyboard doesn't have a symbol avaiable on that SHIFT+key you can just skip it by pressing ENTER. You don't need to escape \ and ". It's much easier to do than to explain ;P Remember to change the name in the macro_script.sh at the end.
