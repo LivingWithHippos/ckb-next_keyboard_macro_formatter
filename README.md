@@ -24,7 +24,7 @@ You can now start to write your macro. **Every command need to be separated with
 See the table below for some useful keys names. Remember to save your file. 
 
 ### 2. Run the script
-Open your terminal in the script folder and run `bash macro_script.sh ./path_to_your_macro` 
+Open your terminal in the scripts folder and run `bash macro_script.sh ./path_to_your_macro` 
 This creates an output.txt file with the formatted macro. Open it and copy its content.
 
 ### 3. Import it into ckb-next
@@ -45,11 +45,11 @@ Caps lock | caps
 f1,f2... | f1,f2...
 Enter | enter
 
-See [the complete list here](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/keys_names.md) or [the list for the Corsair Scimitar here.](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/keys_names_scimitair.md)
+See [the complete list here](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/keys%20list/keys_names.md) or [the list for the Corsair Scimitar here.](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/keys%20list/keys_names_scimitair.md)
 
 ## Examples
 
-Create the file my_macro.txt in the same folder as this script, open in and write
+Create the file my_macro.txt in the script's folder, open it and write
 ```
 # Cut
 macro: +lctrl x -lctrl
@@ -73,10 +73,10 @@ letters must be written in lower case because you are already pressing shift. Yo
 This is not working 100%, I think It would be solved using some delay between presses.
  
 ## Using other layouts
-You can switch between languages for this script by opening [the macro main script](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/macro_script.sh) an modifying the line `AWK=./filter_en_uk.awk` to your needs.
+You can switch between languages for this script by opening [the macro main script](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/macro_script.sh) an modifying the line `AWK=./filter_en_uk.awk` to your needs.
 
 ### Creating your own language script
-You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/automated_layout_filter_creator.sh) to create your own script. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout: 
+You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/automated_layout_filter_creator.sh) to create your own script. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout: 
 1. A first row with a symbol key under esc on the left of "1", ten numbers and 2 other symbols keys
 2. A row below it starting with TAB, with two symbols keys on the left of ENTER
 3. A row below it starting with CAPS LOCK, with three symbols keys on the left of Enter
