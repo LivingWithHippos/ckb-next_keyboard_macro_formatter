@@ -73,10 +73,10 @@ letters must be written in lower case because you are already pressing shift. Yo
 This is not working 100%, I think It would be solved using some delay between presses.
  
 ## Using other layouts
-You can switch between languages for this script by opening [the macro main script](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/macro_script.sh) an modifying the line `AWK=./filter_en_uk.awk` to your needs.
+You can switch between languages for this script by opening [the macro main script](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/macro_script.sh) an modifying the line `AWK=./awk_languages/filter_en_uk.awk` to your needs.
 
 ### Creating your own language script
-You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/automated_layout_filter_creator.sh) to create your own script. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout: 
+You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/automated_layout_filter_creator.sh) to create your own layout model. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout: 
 1. A first row with a symbol key under esc on the left of "1", ten numbers and 2 other symbols keys
 2. A row below it starting with TAB, with two symbols keys on the left of ENTER
 3. A row below it starting with CAPS LOCK, with three symbols keys on the left of Enter
