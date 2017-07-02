@@ -1,8 +1,8 @@
 # ckb-next_keyboard_macro_formatter
 A script to translate text into a macro compatible with [ckb-next.](https://github.com/mattanger/ckb-next)
-This is helpful for those without a Corsair keyboard that want to use macro with their mouse since currently macro recording for Corsair's mices ([supported mice list here](https://github.com/mattanger/ckb-next#device-support)) does not work. 
-Please note this is a work in progress and has many bugs probably. Symbols are compatible with the English (en_uk), Italian (it), and German (de) layouts only for now, alphanumerics (a-zA-Z0-9) and modifiers (ctrl,alt) should work anyway (except for the French numbers).
- 
+This is helpful for those without a Corsair keyboard that want to use macro with their mouse since at the moment macro recording for Corsair's mices ([supported mice list here](https://github.com/mattanger/ckb-next#device-support)) does not work.
+Please note this is a work in progress and probably it has many bugs. Symbols are compatible with the English (en_uk), Italian (it), and German (de) layouts only for now, alphanumerics (a-zA-Z0-9) and modifiers (ctrl,alt) should work anyway (except for the French numbers).
+
  - [ckb-next_keyboard_macro_formatter](#ckb-next_keyboard_macro_formatter)
 	- [How to use](#how-to-use)
 		- [1. Prepare your macro](#)
@@ -13,18 +13,18 @@ Please note this is a work in progress and has many bugs probably. Symbols are c
 		- [Advanced Example](#advanced-example)
 	- [Using other layouts](#using-other-layouts)
 		- [Creating your own language script](#creating-your-own-language-script)
- 
+
 ## How to use
 
 ### 1. Prepare your macro
 Create a text file with your favourite editor and start writing "macro: " (without quotes) this need to be written on every row you want to be processed as macro. The space after the ":" is also needed.
-You can now start to write your macro. **Every command need to be separated with a space**
-* Single letters or symbols: write them once 
-* Keys that need to be kept pressed: type them starting with a plus when you want to start pressing (+lctrl for the left control key) and release them when you need to with a minus (-lctrl). 
-See the table below for some useful keys names. Remember to save your file. 
+You can now start writing your macro. **Every command need to be separated with a space**
+* Single letters or symbols: write them once
+* Keys that need to be kept pressed: type a plus (+) symbol and then write them normally when you want to start pressing (e.g. +lctrl for the left control key) and release them when you need to with a minus (-lctrl).
+See the table below for some useful keys names. Remember to save your file.
 
 ### 2. Run the script
-Open your terminal in the scripts folder and run `bash macro_script.sh ./path_to_your_macro` 
+Open your terminal in the scripts folder and run `bash macro_script.sh ./path_to_your_macro`
 This creates an output.txt file with the formatted macro. Open it and copy its content.
 
 ### 3. Import it into ckb-next
@@ -67,16 +67,16 @@ Save it and open the terminal in this same folder, run `bash macro_script.sh my_
 
 You can insert every UNICODE symbol using the key combination
 `+lctrl +lshift +u UNICODE_CODE -u -lshift -lctrl`
-For example © has 00A9 as code so the correct sequence is 
+For example © has 00A9 as code so the correct sequence is
 `+lctrl +lshift +u 0 0 a 9 -u -lshift -lctrl`
 letters must be written in lower case because you are already pressing shift. You can see a list of codes on [this Wikipedia article.](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
 This is not working 100%, I think It would be solved using some delay between presses.
- 
+
 ## Using other layouts
 You can switch between languages for this script by opening [the macro main script](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/macro_script.sh) an modifying the line `AWK=./awk_languages/filter_en_uk.awk` to your needs.
 
 ### Creating your own language script
-You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/automated_layout_filter_creator.sh) to create your own layout model. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout: 
+You can now use [the automated awk filter creator](https://github.com/LivingWithHippos/ckb-next_keyboard_macro_formatter/blob/master/scripts/automated_layout_filter_creator.sh) to create your own layout model. Run it and follow the instruction on the screen. The idea is that you can create a new filter if you have a keyboard with a standard QWERTY layout:
 1. A first row with a symbol key under esc on the left of "1", ten numbers and 2 other symbols keys
 2. A row below it starting with TAB, with two symbols keys on the left of ENTER
 3. A row below it starting with CAPS LOCK, with three symbols keys on the left of Enter
